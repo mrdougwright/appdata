@@ -1,12 +1,7 @@
 source 'https://rubygems.org'
 
-group :development do
-  gem 'capistrano', '~> 2.15.5'
-end
-
 gem 'pg'
 gem 'figaro'
-gem 'rvm-capistrano'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
