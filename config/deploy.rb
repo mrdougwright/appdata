@@ -1,5 +1,11 @@
-require "bundler/capistrano"
-require "rvm/capistrano"
+require 'bundler/capistrano'
+# $:.unshift(File.expand_path("./lib", ENV["rvm_path"]))
+require 'rvm/capistrano'
+
+default_run_options[:shell] = 'bash'
+set :rvm_ruby_string, "ruby-2.0.0p247"
+set :rvm_type, :user
+set :bundle_cmd, 'source $HOME/.bash_profile && bundle'
 
 set :application, "appdata"
 set :repository,  "git@github.com:mrdougwright/appdata.git"
