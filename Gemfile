@@ -1,11 +1,9 @@
 source 'https://rubygems.org'
 
-group :assets do
-  gem 'therubyracer'
+group :development do
+  gem 'capistrano'
 end
 
-gem 'capistrano'
-gem 'rvm-capistrano'
 gem 'pg'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
