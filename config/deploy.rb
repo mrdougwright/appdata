@@ -1,4 +1,5 @@
 require "bundler/capistrano"
+require "rvm/capistrano"
 
 set :application, "appdata"
 set :repository,  "git@github.com:mrdougwright/appdata.git"
